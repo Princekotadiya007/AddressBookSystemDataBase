@@ -39,3 +39,6 @@ DELETE FROM AddressBook_DB WHERE FirstName='vishal';
 
 --Ability to retrieve data using city or state UC6
 SELECT * FROM AddressBook_DB WHERE City='Rajkot'OR State='Gujrat';
+
+--Ability to count addressBook by city and state UC7
+SELECT COUNT(FirstName) FROM AddressBook_DB WHERE City='Rajkot' AND State='Gujrat';
