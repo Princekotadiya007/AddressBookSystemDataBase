@@ -26,5 +26,10 @@ SELECT * FROM AddressBook_DB
 
 --Abiltity to insert new data UC3
 INSERT INTO AddressBook_DB(FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email) VALUES('vishal','patel',' Nikava','Rajkot','Gujrat',1234,6352129268,'Vishal@gmail.com'),
-('prince','kotadiya','Rajkot','Rajkot','Gujrat',360003,6352129268,'Prince@gmail.com'),
-('Pratik','Memakiya','Rajkot','Rajkot','Gujrat',360003,6352129268,'Pratik@gmail.com');
+('Prince','kotadiya','Rajkots','Rajkot','Gujrat',360003,6352129268,'Prince@gmail.com'),
+('Pratik','Memakiya','Rajkot','Rajkot','Gujrat',360003,635212926,'Pratik@gmail.com');
+
+--Ability to Update contact using person name UC4
+UPDATE AddressBook_DB SET LastName='patel' WHERE FirstName='Nisit';
+UPDATE AddressBook_DB SET PhoneNumber=635212926 WHERE FirstName='Rohan';
+UPDATE AddressBook_DB SET Address='Rajkots' WHERE FirstName='Princes';
