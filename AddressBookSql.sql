@@ -45,3 +45,9 @@ SELECT COUNT(FirstName) FROM AddressBook_DB WHERE City='Rajkot' AND State='Gujra
 
 -- UC8 Sort By First Name For City
 SELECT * FROM AddressBook_DB WHERE City = 'Rajkot' ORDER BY FirstName
+
+-- UC9 Add coloum to Address Book Table
+ALTER TABLE AddressBook_DB ADD Name VARCHAR(30);
+ALTER TABLE AddressBook_DB ADD Family VARCHAR(30);
+ALTER TABLE AddressBook_DB ADD Friends VARCHAR(30);
+ALTER TABLE AddressBook_DB ADD Profession VARCHAR(30);
