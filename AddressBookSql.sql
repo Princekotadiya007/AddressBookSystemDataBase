@@ -36,3 +36,6 @@ UPDATE AddressBook_DB SET Address='Rajkots' WHERE FirstName='Princes';
 
 --Ability to delete contact using person name UC5
 DELETE FROM AddressBook_DB WHERE FirstName='vishal';
+
+--Ability to retrieve data using city or state UC6
+SELECT * FROM AddressBook_DB WHERE City='Rajkot'OR State='Gujrat';
