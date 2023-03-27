@@ -26,7 +26,7 @@ SELECT * FROM AddressBook_DB
 
 --Abiltity to insert new data UC3
 INSERT INTO AddressBook_DB(FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email) VALUES('vishal','patel',' Nikava','Rajkot','Gujrat',1234,6352129268,'Vishal@gmail.com'),
-('Prince','kotadiya','Rajkots','Rajkot','Gujrat',360003,6352129268,'Prince@gmail.com'),
+('Prince','kotadiya','Rajkots','Surat','Gujrat',360003,6352129268,'Prince@gmail.com'),
 ('Pratik','Memakiya','Rajkot','Surat','Gujrat',360003,635212926,'Pratik@gmail.com');
 
 --Ability to Update contact using person name UC4
@@ -51,3 +51,6 @@ ALTER TABLE AddressBook_DB ADD Name VARCHAR(30);
 ALTER TABLE AddressBook_DB ADD Family VARCHAR(30);
 ALTER TABLE AddressBook_DB ADD Friends VARCHAR(30);
 ALTER TABLE AddressBook_DB ADD Profession VARCHAR(30);
+
+--Ability to get count of Person's contcat by city UC10
+SELECT COUNT(FirstName) FROM AddressBook_DB AS CountByCity WHERE City='Rajkot';
