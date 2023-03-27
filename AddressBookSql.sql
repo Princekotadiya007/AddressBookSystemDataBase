@@ -33,3 +33,6 @@ INSERT INTO AddressBook_DB(FirstName,LastName,Address,City,State,Zip,PhoneNumber
 UPDATE AddressBook_DB SET LastName='patel' WHERE FirstName='Nisit';
 UPDATE AddressBook_DB SET PhoneNumber=635212926 WHERE FirstName='Rohan';
 UPDATE AddressBook_DB SET Address='Rajkots' WHERE FirstName='Princes';
+
+--Ability to delete contact using person name UC5
+DELETE FROM AddressBook_DB WHERE FirstName='vishal';
